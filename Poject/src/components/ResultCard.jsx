@@ -3,7 +3,8 @@ const ResultCard = ({item}) => {
     const addToCollection=(item)=>{
         const oldData = JSON.parse(localStorage.getItem('collection')) || []
         const newData=[...oldData, item]
-        console.log(newData)
+        localStorage.setItem('collection', JSON.stringify(newData))
+
     }
   return (
     <div className='w-[18vw] relative h-80 bg-white rounded-xl overflow-hidden'>
