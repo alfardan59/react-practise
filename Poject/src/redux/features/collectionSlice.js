@@ -30,7 +30,7 @@ const collectionSlice=createSlice({
         },
         addToast:()=>
         {
-            toast('Wow so easy!', {
+            toast('Added to Collection', {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
